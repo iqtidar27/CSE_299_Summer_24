@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".Activity.Goal">
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goal"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="25dp" />
+
+    <RadioGroup
+        android:id="@+id/goalRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/goal">
+
+        <RadioButton
+            android:id="@+id/gain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gain"
+            android:textSize="25sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/loss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loss"
+            android:textSize="25sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/build"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Build"
+            android:textSize="25sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/maintain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintain"
+            android:textSize="25sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/white" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goalRadioGroup"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_backgrounds"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Submit"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
